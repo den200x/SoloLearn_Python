@@ -15,4 +15,8 @@ word = input("Enter word: ")
 
 print(translate(word))
 
+while translate(word) !='quiiiit':
+    
+    word = input("Enter word: ")
+    print(translate(word))
 
