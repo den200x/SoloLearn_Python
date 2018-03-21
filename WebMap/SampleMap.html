@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_29478cf02ac44a8c80b3cce303017f67 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_29478cf02ac44a8c80b3cce303017f67" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_29478cf02ac44a8c80b3cce303017f67 = L.map(
+                                  'map_29478cf02ac44a8c80b3cce303017f67',
+                                  {center: [38.58,-99.09],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_27cdb293d1e94d0ba15dab365ad03e4b = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_29478cf02ac44a8c80b3cce303017f67);
+        
+    
+
+            var marker_d3ea0bb60386435f83e57126523c488e = L.marker(
+                [38.2,-99.1],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_29478cf02ac44a8c80b3cce303017f67);
+            
+    
+
+                var icon_29e9955a67bd4028842e751dc1f6a570 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3ea0bb60386435f83e57126523c488e.setIcon(icon_29e9955a67bd4028842e751dc1f6a570);
+            
+    
+            var popup_d2ca7d6156884c3f808cbcbbd0f3000a = L.popup({maxWidth: '300'});
+
+            
+                var html_18336d67be7140e6a1db6cbeec3478c7 = $('<div id="html_18336d67be7140e6a1db6cbeec3478c7" style="width: 100.0%; height: 100.0%;">Hi I am a Marker!</div>')[0];
+                popup_d2ca7d6156884c3f808cbcbbd0f3000a.setContent(html_18336d67be7140e6a1db6cbeec3478c7);
+            
+
+            marker_d3ea0bb60386435f83e57126523c488e.bindPopup(popup_d2ca7d6156884c3f808cbcbbd0f3000a);
+
+            
+        
+</script>
